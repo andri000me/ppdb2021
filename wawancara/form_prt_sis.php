@@ -5,12 +5,10 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
         $status=$_SESSION['fi_st'];
         $fi_id=$_SESSION['fi_id'];
         $st=$_GET['st'];
-        
         $u=$_GET['u'];
 
         $ekse=mysqli_query($conn,"Select id_siswa, status, id_admin, pesan from  tb_konfirmasi_pendaftaran where id_siswa='$u'");
         $t_ba=mysqli_fetch_row($ekse);
-
         $c_ks=mysqli_num_rows($ekse);
         $tp_id=mysqli_fetch_row(mysqli_query($conn,"Select nama_lengkap from tb_admin where id_admin='$t_ba[2]'"));
         if($c_ks==0)

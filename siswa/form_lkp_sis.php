@@ -354,7 +354,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                                     $ar_asl=array("Yogyakarta","Bantul", "Sleman", "Kulonprogo", "Gunungkidul", "Lainnya");
                                                     for($ia=0;$ia<count($ar_asl);$ia++)
                                                     {
-                                                        if($ar_asl[$ia]==$tp_dt_sis[35])
+                                                        if($ar_asl[$ia]==$tp_dt_sis[36])
                                                         {
                                                             ?>
                                                             <option value="<?php echo"$ar_asl[$ia]";?>" selected="selected"><?php echo"$ar_asl[$ia]";?></option>

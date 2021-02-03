@@ -231,6 +231,12 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                             </div>
                                         </div>
                                         <div class="form-group">
+                                            <label class="col-lg-3 control-label" for="textArea3">Alamat Domisili Siswa *</label>
+                                            <div class="col-lg-8">
+                                                <textarea class="form-control" name="domisili_siswa" id="textArea3" rows="3" placeholder="Alamat Orang Tua Siswa"><?php $enc_alt3=filter_var($tp_dt_sis[37],FILTER_SANITIZE_STRING); echo"$enc_alt3";?></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
                                             <label for="disabledInput" class="col-lg-3 control-label">Telepon</label>
                                             <div class="col-lg-8">
                                                 <input class="form-control" id="disabledInput" type="text" name="telepon" value="<?php echo"$tp_dt_sis[11]";?>" placeholder="Nomor Telepon Siswa">
@@ -380,6 +386,12 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                             <label class="col-lg-3 control-label" for="textArea3">Alamat Orang Tua (Sesuai C1/KK) *</label>
                                             <div class="col-lg-8">
                                                 <textarea class="form-control" name="alamatorangtua" id="textArea3" rows="3" placeholder="Alamat Orang Tua Siswa"><?php $enc_alt3=filter_var($tp_dt_sis[19],FILTER_SANITIZE_STRING); echo"$enc_alt3";?></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label" for="textArea3">Alamat Domisili Orang Tua *</label>
+                                            <div class="col-lg-8">
+                                                <textarea class="form-control" name="domisili_ortu" id="textArea3" rows="3" placeholder="Alamat Orang Tua Siswa"><?php $enc_alt3=filter_var($tp_dt_sis[38],FILTER_SANITIZE_STRING); echo"$enc_alt3";?></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">

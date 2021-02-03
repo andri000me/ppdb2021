@@ -256,7 +256,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
                                                         $pil_kelas=$_POST['pil_kelas'];
 
-                                                        if(empty($nisn) || empty($namasiswa) || empty($tempatlahir) || empty($tgllahir) || $jk=="-" || $agama=="-" || empty($anakke)|| empty($dari) || $statusdalamkeluarga=="-" || empty($alamatsiswa) || empty($sekolahasal) || empty($namasekolah) || empty($alamatsekolah) || empty($namaayah) || empty($namaibu) || empty($alamatorangtua) || empty($teleponortu) || $kerjaayah=="-" || $kerjaibu=="-" || $pil_kelas=="-")
+                                                        if(empty($namasiswa) || empty($tempatlahir) || empty($tgllahir) || $jk=="-" || $agama=="-" || empty($anakke)|| empty($dari) || $statusdalamkeluarga=="-" || empty($alamatsiswa) || empty($sekolahasal) || empty($namasekolah) || empty($alamatsekolah) || empty($namaayah) || empty($namaibu) || empty($alamatorangtua) || empty($teleponortu) || $kerjaayah=="-" || $kerjaibu=="-" || $pil_kelas=="-")
                                                             {
                                                                 ?>
                                                                 <div class="alert alert-danger alert-dismissable">

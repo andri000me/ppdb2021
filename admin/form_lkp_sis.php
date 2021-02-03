@@ -12,7 +12,6 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
         $st2=$_GET['st'];
 
         $tp_dt_sis=mysqli_fetch_row(mysqli_query($conn,"Select no_pendaftaran, nama_siswa, nisn, tempat_lahir, tgl_lahir, jenis_kelamin, agama, anak_ke, dari, status_dalam_keluarga, alamat_siswa, telepon, sekolah_asal, nama_sekolah, alamat, sttb_tahun, sttb_nomor, nama_ayah, nama_ibu, alamat_ortu, telepon_ortu, kerja_ayah, kerja_ibu, nama_wali, alamat_wali, telepon_wali, pekerjaan_wali, foto, foto_skhu, jumlah_nilai, email_aktif, kelas, mtk, ipa, bind, asal_ortu, asal_lain, domisili_siswa, domisili_ortu, golongan_darah from tb_siswa where id_siswa='$fi_id'"));
-            var_dump($tp_dt_sis);
         if($status=="Admin")
             {
                 ?>
@@ -319,7 +318,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="disabledInput" class="col-lg-3 control-label">Jumlah Nilai Akhir USD</label>
+                                            <label for="disabledInput" class="col-lg-3 control-label">Jumlah Nilai</label>
                                             <div class="col-lg-8">
                                                 <input class="form-control" id="disabledInput" type="text" name="jumlahnilai" value="<?php echo"$tp_dt_sis[29]";?>" placeholder="Jumlah NIlai Akhir USD">
                                             </div>

@@ -46,15 +46,15 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                             <td style='vertical-align:top'>$tp_dt_sis[31]</td>
                         </tr> 
                         <tr>
-                            <td style='vertical-align:top'><strong>Nama Orang Tua</strong></td>
-                            <td style='vertical-align:top'><strong>:</strong></td>
-                            <td style='vertical-align:top'>$tp_dt_sis[17]</td>
-                        </tr>  
-                        <tr>
                             <td style='vertical-align:top'><strong>Asal SD</strong></td>
                             <td style='vertical-align:top'><strong>:</strong></td>
                             <td style='vertical-align:top'>$tp_dt_sis[12]</td>
                         </tr>
+                        <tr>
+                            <td style='vertical-align:top'><strong>Nama Orang Tua</strong></td>
+                            <td style='vertical-align:top'><strong>:</strong></td>
+                            <td style='vertical-align:top'>$tp_dt_sis[17]</td>
+                        </tr>  
                         <tr>
                             <td style='vertical-align:top'><strong>Pekerjaan Orang Tua</strong></td>
                             <td style='vertical-align:top'><strong>:</strong></td>

@@ -317,13 +317,19 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                                 <div class="form-group">
                                                     <label for="disabledInput" class="col-lg-2 control-label">Asal Orang Tua </label>
                                                     <div class="col-lg-10">
-                                                      <p class="form-control-static text-muted" style="vertical-align: top;"><?php echo"$tp_dt_sis[15]";?></p>
+                                                      <p class="form-control-static text-muted" style="vertical-align: top;"><?php echo"$tp_dt_sis[39]";?></p>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="col-lg-2 control-label" for="textArea2">Alamat Orang Tua (Sesuai C1/KK) </label>
                                                     <div class="col-lg-10">
                                                         <p class="form-control-static text-muted" style="vertical-align: top;"><?php echo"$tp_dt_sis[19]";?></p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label" for="textArea2">Alamat Domisili Orang Tua </label>
+                                                    <div class="col-lg-10">
+                                                        <p class="form-control-static text-muted" style="vertical-align: top;"><?php echo"$tp_dt_sis[38]";?></p>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -701,7 +707,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                                 <div class="form-group">
                                                     <label for="disabledInput" class="col-lg-2 control-label">Asal Orang Tua </label>
                                                     <div class="col-lg-10">
-                                                       <p class="form-control-static text-muted" style="vertical-align: top;"><?php echo"$tp_dt_sis[15]";?></p>
+                                                       <p class="form-control-static text-muted" style="vertical-align: top;"><?php echo"$tp_dt_sis[39]";?></p>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">

@@ -19,7 +19,6 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
         }
 
         $tp_dt_sis=mysqli_fetch_row(mysqli_query($conn,"Select no_pendaftaran, nama_siswa, nisn, tempat_lahir, tgl_lahir, jenis_kelamin, agama, anak_ke, dari, status_dalam_keluarga, alamat_siswa, telepon, sekolah_asal, nama_sekolah, alamat, sttb_tahun, sttb_nomor, bind, mtk, ipa, nama_ayah, nama_ibu, asal_ortu, asal_lain, alamat_ortu, telepon_ortu, kerja_ayah, kerja_ibu, nama_wali, alamat_wali, telepon_wali, pekerjaan_wali, foto, foto_skhu, jumlah_nilai, email_aktif, kelas, status, golongan_darah, domisili_siswa, domisili_ortu from tb_siswa where id_siswa='$u'"));
-            var_dump($tp_dt_sis);
         if($status=="Admin")
             {
                 ?>

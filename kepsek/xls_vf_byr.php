@@ -77,14 +77,14 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                     <th>Dana Pendidikan</th>
                                     <th>Infaq</th>
                                     <th>SPP</th>
+                                    <th>Pembayaran Diawal</th>
+                                    <th>Tanggal Awal Pembayaran</th>
                                     <th>Angsuran 1</th>
                                     <th>Tanggal Angsuran 1</th>
                                     <th>Angsuran 2</th>
                                     <th>Tanggal Angsuran 2</th>
                                     <th>Angsuran 3</th>
                                     <th>Tanggal Angsuran 3</th>
-                                    <th>Angsuran 4</th>
-                                    <th>Tanggal Angsuran 4</th>
                                     <th>Tanggal Proses</th>
                                 </tr>
                             </thead>

@@ -33,9 +33,9 @@ $mail->MsgHTML("Terima kasih anda telah melakukan pembayaran di SMP Muhammadiyah
 
     Anda Dapat Melihat Informasi Ini Juga Di Panel Dashboard Anda.<br /><br />
 
-    Salam Hormat Kami,<br />
-    SMP MUHAMMADIYAH 4 YOGYAKARTA<br />
-    Jl. Ki Mangunsarkoro No.43, Gunungketur, Pakualaman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55166<br />
+    Salam Hormat Kami,<br/>
+    SMP MUHAMMADIYAH 4 YOGYAKARTA<br/>
+    Jl. Ki Mangunsarkoro No. 43, Gunungketur, Pakualaman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55111<br/>
     (0274) 554623");
 $mail->Send();
 ?>

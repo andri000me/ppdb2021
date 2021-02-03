@@ -307,7 +307,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                                                 // if($p_s=="ok")
                                                                 $date_update=date("Y-m-d H:i:s");
                                                                 $query = "update tb_siswa set nama_siswa='$namasiswa', nisn='$nisn', tempat_lahir='$tempatlahir', tgl_lahir='$tgllahir', jenis_kelamin='$jk', agama='$agama', anak_ke='$anakke', dari='$dari', status_dalam_keluarga='$statusdalamkeluarga', alamat_siswa='$alamatsiswa', telepon='$telepon', sekolah_asal='$sekolahasal', nama_sekolah='$namasekolah', alamat='$alamatsekolah', sttb_tahun='$thnsttb', sttb_nomor='$nosttb', bind='$bind', mtk='$mtk', ipa='$ipa', nama_ayah='$namaayah', nama_ibu='$namaibu', asal_ortu='$asal_ortu', asal_lain='$asal_lain', alamat_ortu='$alamatorangtua', telepon_ortu='$teleponortu', kerja_ayah='$kerjaayah', kerja_ibu='$kerjaibu', nama_wali='$namawali', alamat_wali='$alamatwali', telepon_wali='$telepowali', pekerjaan_wali='$kerjawali', foto='$fn_pasfoto', foto_skhu='$fn_skhu', jumlah_nilai='$jumlahnilai', email_aktif='$email', kelas='$pil_kelas', tgl_update='$date_update', asal_ortu='$asal_ortu', asal_lain='$asal_lain', domisili_siswa='$domisili_siswa', domisili_ortu='$domisili_ortu', golongan_darah='$goldar' where id_siswa='$up'";
-
+                                                                    mysqli_query($conn,$query);
                                                                 if($ck==1)
                                                                 {
                                                                      move_uploaded_file($pasfoto['tmp_name'], "../siswa/foto_pp/".$fn_pasfoto);

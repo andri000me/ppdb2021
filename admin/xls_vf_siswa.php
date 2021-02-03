@@ -31,8 +31,8 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                 {
                     $cr="where status='Terdaftar' $d_c";
                     $st_s="Terdaftar";
-                    header("Content-type: application/vnd-ms-excel");
-                    header("Content-Disposition: attachment; filename=Data_Siswa_Diterima$pd.xls");
+                    // header("Content-type: application/vnd-ms-excel");
+                    // header("Content-Disposition: attachment; filename=Data_Siswa_Diterima$pd.xls");
                 }
                 elseif($st=="rj")
                 {
@@ -82,7 +82,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                     <th>Alamat Siswa</th>
                                     <th>Domisili Siswa</th>
                                     <th>Telepon</th>
-                                    <th>Asal Sekolah</th>
+                                    <th>Asal SD</th>
                                     <!-- <th>Nama Sekolah</th> -->
                                     <th>Alamat Sekolah</th>
                                     <th>Tahun IJAZAH </th>
@@ -110,6 +110,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                             <tbody>
                                 <?php
                                 $ab_biaya=mysqli_query($conn,"Select * from tb_siswa $cr order by no_pendaftaran asc");
+                                // var_dump(mysqli_fetch_row($ab_biaya));
                                 while($tp_biaya=mysqli_fetch_row($ab_biaya))
                                 {
                                     ?>
@@ -140,9 +141,9 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[18]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[19]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[20]";?></td>
-                                        <td style="vertical-align: top"><?php echo"$tp_biaya[21]";?></td>
-                                        <td style="vertical-align: top"><?php echo"$tp_biaya[22]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[47]";?></td>
+                                        <td style="vertical-align: top"><?php echo"$tp_biaya[12]";?></td>
+                                        <td style="vertical-align: top"><?php echo"$tp_biaya[22]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[23]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[24]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[25]";?></td>

@@ -284,7 +284,7 @@
     <footer class="tz-footer">
        
        <div class="tz-footer-address-site">
-            <address> Hak Cipta @<?php  date_default_timezone_set("Asia/Jakarta");$thn=date("Y");echo"$thn";?> | Dikembangkan Oleh Tim IT MUPAT JUNIOR</address>
+            <address> Hak Cipta SMP Muhammadiyah 4 Yogyakarta @ <?php  date_default_timezone_set("Asia/Jakarta");$thn=date("Y");echo"$thn";?> | Program Pengembangan PPDB Oleh Tim IT MUPAT JUNIOR</address>
         </div>
     </footer>
     <!-- End Footer -->
