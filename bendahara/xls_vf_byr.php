@@ -86,6 +86,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                     <th>Angsuran 3</th>
                                     <th>Tanggal Angsuran 3</th>
                                     <th>Tanggal Proses</th>
+                                    <th>Jumlah</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -93,7 +94,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                 $ab_biaya=mysqli_query($conn,"Select id_siswa, no_pendaftaran, nama_siswa, kelas, jenis_kelamin, status, status_pembayaran from tb_siswa $cr order by no_pendaftaran asc");
                                 while($tp_biaya=mysqli_fetch_row($ab_biaya))
                                 {
-                                    $tp_byr=mysqli_fetch_row(mysqli_query($conn,"Select dana_pendidikan, infaq, spp, angsuran1, tgl_angsuran1, angsuran2, tgl_angsuran2, angsuran3, tgl_angsuran3, angsuran4, tgl_angsuran4, tgl_entry, status_verifikasi, metode_pembayaran from tb_pembayaran where id_siswa='$tp_biaya[0]'"));
+                                    $tp_byr=mysqli_fetch_row(mysqli_query($conn,"Select dana_pendidikan, infaq, spp, angsuran1, tgl_angsuran1, angsuran2, tgl_angsuran2, angsuran3, tgl_angsuran3, angsuran4, tgl_angsuran4, tgl_entry, status_verifikasi, metode_pembayaran, jumlah from tb_pembayaran where id_siswa='$tp_biaya[0]'"));
                                     ?>
                                     <tr>
                                         <td><?php echo"$tp_biaya[1]";?></td>
@@ -127,7 +128,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                         <td><?php echo"$tp_byr[9]";?></td>
                                         <td><?php echo"$tp_byr[10]";?></td>
                                         <td><?php echo"$tp_byr[11]";?></td>
-                                        
+                                        <td><?php echo("Rp " . number_format($tp_byr[14],0));?></td>
                                     </tr>
                                     <?php
                                 }

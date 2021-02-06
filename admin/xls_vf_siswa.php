@@ -103,7 +103,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                     <th>Alamat Wali</th>
                                     <th>Telepon Wali</th>
                                     <th>Pekerjaan Wali</th>
-                                    <th>Jumlah Nilai UN</th>
+                                    <!-- <th>Jumlah Nilai UN</th> -->
                                     <th>Kelas Yang Dipilih</th>
                                     <!-- add end -->
                                 </tr>
@@ -152,7 +152,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[27]";?></td>
                                         <!-- <td style="vertical-align: top"><img src="../siswa/foto_pp/<?php echo"$tp_biaya[28]";?>" style="width: 100%"></td> -->
                                         <!-- <td style="vertical-align: top"><img src="../siswa/foto_skhu/<?php echo"$tp_biaya[29]";?>" style="width: 100%"></td> -->
-                                        <td style="vertical-align: top"><?php echo"$tp_biaya[30]";?></td>
+                                        <!-- <td style="vertical-align: top"><?php echo"$tp_biaya[30]";?></td> -->
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[32]";?></td>
                                         <!-- add end -->
                                     </tr>

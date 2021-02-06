@@ -68,6 +68,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                         <table border="1" id="datatable2" cellspacing="0" style="width: 100%">
                             <thead>
                                 <tr>
+                                    <!-- add begin -->
                                     <th>No. Pendaftaran</th>
                                     <th>Nama Pendaftar</th>
                                     <th>NISN</th>
@@ -79,15 +80,22 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                     <th>Dari</th>
                                     <th>Status Dalam Keluarga</th>
                                     <th>Alamat Siswa</th>
+                                    <th>Domisili Siswa</th>
                                     <th>Telepon</th>
-                                    <th>Sekolah Asal</th>
-                                    <th>Nama Sekolah</th>
+                                    <th>Asal SD</th>
+                                    <th>Golongan Darah</th>
+                                    <!-- <th>Nama Sekolah</th> -->
                                     <th>Alamat Sekolah</th>
                                     <th>Tahun IJAZAH </th>
                                     <th>Nomor IJAZAH </th>
+                                    <th>Nilai Bahasa Indonesia</th>
+                                    <th>Nilai Matematika</th>
+                                    <th>Nilai IPA</th>
+                                    <th>Jumlah Nilai</th>
                                     <th>Nama Ayah</th>
                                     <th>Nama Ibu</th>
                                     <th>Alamat Orang Tua</th>
+                                    <th>Domisili Orang Tua</th>
                                     <th>Telepon Orang Tua</th>
                                     <th>Pekerjaan Ayah</th>
                                     <th>Pekerjaan Ibu</th>
@@ -95,10 +103,9 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                     <th>Alamat Wali</th>
                                     <th>Telepon Wali</th>
                                     <th>Pekerjaan Wali</th>
-                                    <!-- <th>Foto Profil</th>
-                                    <th>Foto SKHU</th> -->
-                                    <th>Jumlah Nilai UN</th>
+                                    <!-- <th>Jumlah Nilai UN</th> -->
                                     <th>Kelas Yang Dipilih</th>
+                                    <!-- add end -->
                                 </tr>
                             </thead>
                             <tbody>
@@ -108,6 +115,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                 {
                                     ?>
                                     <tr>
+                                       <!-- add begin -->
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[1]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[2]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[3]";?></td>
@@ -119,15 +127,22 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[9]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[10]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[11]";?></td>
+                                        <td style="vertical-align: top"><?php echo"$tp_biaya[46]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[12]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[13]";?></td>
-                                        <td style="vertical-align: top"><?php echo"$tp_biaya[14]";?></td>
+                                        <td style="vertical-align: top"><?php echo"$tp_biaya[48]";?></td> <!-- GOLONAN DARAH -->
+                                        <!-- <td style="vertical-align: top"><?php echo"$tp_biaya[14]";?></td> -->
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[15]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[16]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[17]";?></td>
+                                        <td style="vertical-align: top"><?php echo"$tp_biaya[41]";?></td>
+                                        <td style="vertical-align: top"><?php echo"$tp_biaya[42]";?></td>
+                                        <td style="vertical-align: top"><?php echo"$tp_biaya[43]";?></td>
+                                        <td style="vertical-align: top"><?php echo"$tp_biaya[30]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[18]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[19]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[20]";?></td>
+                                        <td style="vertical-align: top"><?php echo"$tp_biaya[47]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[21]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[22]";?></td>
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[23]";?></td>
@@ -137,9 +152,9 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[27]";?></td>
                                         <!-- <td style="vertical-align: top"><img src="../siswa/foto_pp/<?php echo"$tp_biaya[28]";?>" style="width: 100%"></td> -->
                                         <!-- <td style="vertical-align: top"><img src="../siswa/foto_skhu/<?php echo"$tp_biaya[29]";?>" style="width: 100%"></td> -->
-                                        <td style="vertical-align: top"><?php echo"$tp_biaya[30]";?></td>
+                                        <!-- <td style="vertical-align: top"><?php echo"$tp_biaya[30]";?></td> -->
                                         <td style="vertical-align: top"><?php echo"$tp_biaya[32]";?></td>
-
+                                        <!-- add end -->
                                     </tr>
                                     <?php
                                 }
